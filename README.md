@@ -85,7 +85,7 @@ services:
       - N8N_PROTOCOL=https
       - N8N_PATH=${N8N_PATH}
       - N8N_WEBHOOK_URL=https://${N8N_HOST}${N8N_PATH}
-	    - VUE_APP_URL_BASE_API=https://${N8N_HOST}${N8N_PATH}
+	  - VUE_APP_URL_BASE_API=https://${N8N_HOST}${N8N_PATH}
       
       # --- Seguridad ---
       - N8N_BASIC_AUTH_ACTIVE=true
@@ -96,8 +96,8 @@ services:
       
       # --- Zona Horaria (Ajusta si es necesario) ---
       - TZ=America/Mexico_City
-	    # --- Telemetry (opcional)
-	    - N8N_DIAGNOSTICS_ENABLED=false
+	  # --- Telemetry (opcional)
+	  - N8N_DIAGNOSTICS_ENABLED=false
       - N8N_PERSONALIZATION_ENABLED=false
 
     volumes:
